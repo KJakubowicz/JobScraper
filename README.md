@@ -43,10 +43,13 @@ Aktualnie jest obsłużony provider = workable dla strony https://apply.workable
 ## Funkcjonalności
 
 - Główna komenda aplikacji konsolowej (`php artisan app:web-scraper {provider}`) umożliwia automatyczne pobieranie i zapisywanie danych do bazy.
+
 - Przeglądanie wyników:
-  - `/` – wyświetla listę ogłoszeń, umożliwia filtrowanie wyników.
-  - `/{jobOfferId}/history` – sprawdza historię aktualizacji danego ogłoszenia.
-  - `/process-logs` – podgląd procesów związanych z przetwarzaniem danych.
+    - `/` – wyświetla listę ogłoszeń, umożliwia filtrowanie wyników.
+    - `/{jobOfferId}/history` – sprawdza historię aktualizacji danego ogłoszenia.
+    - `/process-logs` – podgląd procesów związanych z przetwarzaniem danych.
+    - `/version/active/{versionId}` – ustawia wersję ogłoszenia jako aktywną.
+    - `/version/delete/{versionId}` – usuwa wybraną wersję ogłoszenia.
 
 ## Wersje ofert
 
